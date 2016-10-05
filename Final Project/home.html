@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GH-Home</title>
+	<!--Responsive-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--External CSS-->
+	<link rel="stylesheet" type="text/css" href="final.css">
+	<!--Online fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Quicksand|Cookie" rel="stylesheet">
+</head>
+
+<body>
+<div class="container">
+	<!--Logo, with some styling in the tags. Text surrounded by image on either side. And tagline-->
+	<div class="title">
+		<header>
+			<a style="color:#BC6D4F;" href="landing.html"><h1 id="brand"><img src="rose.jpg" width="125" height="90">The Goth Hippie<img src="rosereverse.png" width="125" height="90"></a></h1>
+			<h3 id="tagline">(noun): a nature loving creature with a morbid flair</h3></a>
+		</header>
+	</div>
+
+	<div class="navigation">
+		<nav>
+			<a class="tabs" href="home.html">Home</a>
+			<a class="tabs" href="about.html">About</a>
+			<div class="dropdown">
+				<a class="tabs" href="shop.html">Shop</a>
+				<div class="dropdown-items">
+					<a class="tabs" href="skin.html">Skin</a><br>
+					<a class="tabs" href="hair.html">Hair</a><br>
+					<a class="tabs" href="lips.html">Lips</a><br>
+					<a class="tabs" href="brows.html">Brows</a><br>
+				</div>
+			</div>
+			<a class="tabs" href="press.html">Press</a>
+			<a class="tabs" href="contact.html">Contact</a>
+			<a class="tabs" href="cart.html">Cart</a>
+		</nav>
+	</div>
+
+	<!--Container & contents for Home body-->
+	<div class="home-body">
+		<!--Text and .gif from American Horror Story:Coven-->
+		<h2 class="welcome">Welcome to Your Happy Place!</h2>
+		<center><img src="bath.gif" width="800" height="400" style="margin-bottom:50px;"><center>
+		<h3 class="discount-code">Through 10/31: Free Shipping on all orders over $25<br>Enter Code: BRUJA</h3>
+	</div>
+</div>
+
+<!--Footer styled with table-->
+	<div class="footer-info">
+			<center><table class="impt-links">
+				<col width="270">
+  				<col width="270">
+  				<col width="270">
+				<tr>
+					<th>follow gh</th>
+					<th>quick links</th>
+					<th>newsletter sign-up</th>
+				</tr>
+				<tr>
+					<!--social media icons, links-->
+					<td>
+						<a target="_blank" href="https://www.facebook.com/kahlolove"><img class="icons" src="facebook-icon.png" width="28" height="28"></a>
+						<a target="_blank" href="https://www.instagram.com/The_GothHippie/"><img class="icons" src="instagram-icon.png" width="28" height="28"></a>
+						<a target="_blank" href="https://twitter.com/The_GothHippie"><img class="icons" src="twitter-icon.png" width="28" height="28"></a>
+					</td>
+					<td>
+						<a class="quick-links" href="shop.html">Shop All</a>
+					</td>
+					<td>
+						<!--newsletter sign-up input field-->
+						<input class="footer-input" type="text" name="email" style="width:260px;">
+					</td>
+				</tr>
+				<tr>
+					<td><a class="quick-links" target="_blank" href="https://twitter.com/search?q=%23thegothhippie&src=typd">#TheGothHippie</a></td>
+					<td>
+						<a class="quick-links" href="FAQ.html">Frequently Asked Questions</a>
+					</td>
+					<td>
+						<!--newsletter sign-up button, with JS-->
+						<input class="footer-button" type="button" onclick="newsletterSuccess()" name="submit" value="Join Us!" style="width:110px; float: right;">
+					</td>
+				<tr>
+					<td><a class="quick-links" target="_blank" href="https://twitter.com/hashtag/myhappyplace?src=hash">#MyHappyPlace</a></td>
+					<td>
+						<a class="quick-links" href="contact.html">Contact GH</a>
+					</td>
+					<td></td>
+				</tr>	
+			</table></center>
+	</div>
+
+<script>
+	//onclick window alert for newsletter sign-up in footer
+function newsletterSuccess() {
+    alert("Thanks for subscribing to The Goth Hippie Newsletter! We look forward to haunting your inbox ;)");
+}
+</script>
+
+</body>
+
+<style>
+/*Internally styled container to account for amount of content on each page*/
+.container {
+	width: 1200px;
+	height: 1100px;
+}
+
+.footer-info {
+	width: 1140px;
+	text-align: center;
+	margin: auto;
+	padding: 30px;
+}
+</style>
+
+</html>

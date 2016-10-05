@@ -1,0 +1,471 @@
+/* Colors used throughout:
+#500805 - wine; #1E0000 or rgb(30,0,0) - dark plum; 
+#9D331F - coral; #BC6D4F - dusty rose */
+
+/*Outer container, setting color and default font for all 
+content*/
+body {
+	background-color: #500805; 
+	/*Styling image to fill up the entire screen, centered, no tiling*/
+	background: url("fall-grayscale.jpg") no-repeat center fixed;
+	background-size: cover;
+	/*Online font, linked in .html page heads*/
+	font-family: 'Quicksand', sans-serif;
+	/*Wanted to scale the entire website without manually changing all the sizing*/
+	-moz-transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+    margin: 0 auto;
+}
+
+/*Main container for all other <div>s in the body, offset by 
+dark plum color*/
+.container {
+	background-color: rgba(30,0,0,.85);
+	width: 1200px;
+	height: 100%;
+	margin: auto;
+	top:0;
+}
+
+/*General <header> styling for "logo" and tagline*/
+.title {
+	text-align: center;
+	color: #BC6D4F;
+	line-height: 0px;
+	padding: 10px;
+}
+
+/*Goth Hippie logo alignment*/
+h1 {
+	margin-top: 10px;
+}
+
+/*Goth Hippie logo specs. USES INSTALLED FONT, saved in Folder. Included back-up online font*/
+#brand {
+	font-family: 'Cookie', cursive;
+	font-family: 'Sweetly Broken', regular;
+	font-size: 130px;
+	transition: all .2s ease-in;
+}
+
+/*Glow effect, taken from landing page; slight reddish glow*/
+#brand:hover {
+	-webkit-stroke-width: 5.3px;
+	-webkit-stroke-color: #1E0000;
+	-webkit-fill-color: #1E0000;
+	text-shadow: 2px 2px 20px gray;
+}
+
+/*Tagline under GH logo*/
+#tagline {
+	font-family: 'Amatic SC', cursive;
+	font-size: 30px;
+}
+
+/*Nav bar. Spaced words to fill up nav*/
+.navigation {
+	background-color: #9D331F;
+	text-align: center;
+	font-family: 'Amatic SC', cursive;
+	font-size: 40px;
+	word-spacing: 40px
+}
+
+/*Default anchor styling, though these are also styled internally to match page's theme*/
+a {
+	text-decoration: none;
+}
+
+/*Default anchor hover effect*/
+a:hover {
+	cursor: pointer;
+	font-weight: bold;
+}
+
+/*Press page links & "grow"*/
+.links {
+	color: #500805;
+	transition: all .2s ease-in-out;
+}
+
+.links:hover {
+	transform: scale(1.1);
+}
+
+/*Class for navigation tabs*/
+.tabs {
+	text-decoration: none;
+	color: #1E0000;
+}
+.tabs:hover {
+	font-weight: bold;
+}
+
+/*Dropdown within main nav menu (Shop)*/
+.dropdown {
+	border: 2px;
+	position: relative;
+	display: inline-block;
+	padding: 5px;
+}
+.dropdown-items {
+	display: none;
+	position: absolute;
+	width: 65px;
+	text-align: center;
+	background-color: #9D331F;
+	color: #1E0000;
+	z-index: 30;
+}
+.dropdown:hover  .dropdown-items{
+	display: block;
+}
+
+/*Inner Home container*/
+.home-body {
+	margin-top: 2%;
+}
+
+/*Styled to stay at the bottom of each page*/
+footer {
+	position: relative;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	padding: 30px;
+	bottom: 0;
+}
+
+/*Container for footer content, organized in a table*/
+.footer-info {
+	background-color: #9D331F;
+	color: #1E0000;
+	margin-top: 0;
+}
+
+/*footer table*/
+.impt-links {
+	text-align: left;
+}
+
+/*"Grow" for social media icons*/
+.icons {
+	transition: all .2s ease-in-out;
+}
+.icons:hover {
+	transform: scale(1.1);
+}
+
+th {
+	font-family: 'Amatic SC', cursive;
+	font-size: 25px;
+}
+
+/*anchor tags within footer table, given special style*/
+.quick-links {
+	text-decoration: none;
+	color: #1E0000;
+}
+
+/*Container for About contents*/
+.about-body {
+	padding: 50px;
+	margin: auto;
+	margin-top: 40px;
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-bottom: 40px;
+	background-color: #9D331F;
+	opacity: .8;
+	border-style: solid;
+	border-color: #500805;
+	color: #1E0000;
+}
+
+/*Contains About text, within .about-body*/
+.origins {
+	display: inline-block;
+	width: 500px;
+}
+
+/*Contains About text, within .about-body*/
+.founder-image {
+	display: inline-block;
+	position: relative;
+	left: 120px;
+	width: 500px;
+	height: 500px;
+}
+
+/*Used in Home(edited), FAQ(edited)*/
+h3 {
+	font-family: 'Amatic SC', cursive;
+	color: #BC6D4F;
+	font-size: 40px;
+	text-decoration: underline;
+}
+
+/*Edited h3, for Home*/
+.discount-code {
+	font-size: 35px;
+	text-decoration:none; 
+	word-spacing:8px; 
+	letter-spacing:8px; 
+	margin-top:0px; 
+	margin-bottom:25px;
+}
+
+/*About paragraphs*/
+.about-me {
+	font-size: 20px;
+}
+
+/*Image credits in About page*/
+.image-credits {
+	color: #1E0000;
+	font-size: 18px;
+	line-height: 2px;
+}
+
+/*Contact form styling*/
+form {
+	width: 954px;
+	height: 620px;
+	padding: 20px;
+	margin: auto;
+	color: #1E0000;
+	background-color: #9D331F;
+	opacity: .8;
+	border-style: solid;
+	border-color: #500805;
+	font-size: 30px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	outline: none;
+	font-family: 'Amatic SC', cursive;
+}
+
+/*Effects for contact form input fields*/
+input:hover {
+	cursor: pointer;
+}
+
+input[type=text]:hover {
+    background-color: #500805;
+    color: #BC6D4F;
+}
+
+/*Effects for submission buttons*/
+input[type=button] {
+	font-size: 24px;
+	text-align: center;
+	outline: none;
+	font-family: 'Amatic SC', cursive;
+	color: #1E0000;
+	background-color: ;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 0 5px #500805;
+	margin-top: 7px;
+}
+
+input[type=button]:active {
+	box-shadow: 0 2px #500805;
+	transform: translateY(4px);
+}
+
+input[type=radio]: {
+	outline: none;
+	display: inline-block;
+	margin-left  : -28px;
+}
+
+/*Form input styling*/
+input {
+	width: 300px;
+	height: 30px;
+	background-color: #BC6D4F;
+	border-style: solid;
+	border-color: #500805;
+	border-radius: 10px;
+	outline: none;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 25px;
+}
+
+/*Input - comment field*/
+.comments {
+	width: 440px;
+	height: 100px;
+}
+
+/*Input - name/email fields*/
+.input-field {
+	width: 440px;
+	height: 40px;
+}
+
+/*Table on Shop All page containing product categories*/
+.products {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+/*Styling <td> for Shop items*/
+.shop {
+	background-color: #9D331F;
+	padding: 20px;
+	color: #1E0000;
+	font-size: 20px;
+	text-decoration: none;
+	line-height: 2px;
+	transition: all .2s ease-in-out;
+}
+
+/*"Grow"*/
+.shop:hover {
+	transform: scale(1.1);
+}
+
+/*Used in home(edited), press(edited), FAQ(edited)*/
+h2 {
+	font-family: 'Amatic SC', cursive;
+	color: #BC6D4F;
+	font-size: 65px;
+	text-decoration: underline;
+	text-align: center;
+	margin: 20px;
+}
+
+/*Edited h2, for Home*/
+.welcome {
+	text-decoration: none; 
+	word-spacing: 8px; 
+	letter-spacing: 8px;
+}
+
+/*Used on product pages for How-To and Ingredients, press page(edited)*/
+h4 {
+	text-decoration: underline;
+}
+
+
+/*Centering the <div>s on the individual product pages*/
+.item-body {
+	position: absolute;
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 10px;
+}
+
+/*Contains product divs displayed as a slideshow*/
+.slideshow {
+	text-align: center;
+	width: 1195px;
+}
+
+/*Contains product image and how-to, on the lefthand side. Used float:left so the two <div>s would align*/
+.products-left {
+	background-color: #9D331F;
+	float: left;
+	width: 400px;
+	height: 500px;
+	margin-top: 20px;
+	margin-left: 6%;
+	padding: 50px;
+	text-align: left;
+}
+
+/*Contains product name, specs, price, description, and ingredients, righthand side*/
+.products-right {
+	background-color: #9D331F;
+	display: inline-block;
+	width: 400px;
+	height: 500px;
+	margin-top: 20px;
+	padding: 50px;
+	text-align: left;
+}	
+
+/*Price line for product pages*/
+h5 {
+	font-size: 18px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+/*Adding slideshow to product pages, buttons below apply to
+.item-body*/
+.back-button:hover {
+	cursor: pointer;
+}
+.back-button {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	/*background-color: rgba(240,255,240,.4);
+	background-size: 20px;
+	margin-left: 10px;*/
+	font-size: 80px;
+	color: #BC6D4F;
+}
+.forward-button:hover {
+	cursor: pointer;
+}
+.forward-button {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	font-size: 80px;
+	color: #BC6D4F;
+}
+
+
+/*Container for press page contents*/
+.press-body {
+	color: #BC6D4F;
+	padding: 30px;
+	text-align: justify;
+	margin: auto;
+}
+
+/*Individual divs for reviews in press page*/
+.reviews{
+	background-color: #9D331F;
+	opacity: .8;
+	font-size: 18px;
+	padding: 20px;
+	width: 800px;
+	height: 220px;
+	border-style: solid;
+	border-color: #500805;
+
+}
+
+/*Container for shopping cart elements*/
+.cart-body {
+	background-color: #9D331F;
+	opacity: .8;
+	border-style: solid;
+	border-color: #500805;
+	font-size: 20px;
+	text-align: center;
+	margin: auto;
+	margin-top: 7%;
+	margin-bottom: 20px;
+	width: 800px;
+}
+
+/*Inner container, holds FAQ content*/
+.FAQ-body {
+	padding: 30px;
+	background-color: #9D331F;
+	opacity: .8;
+	margin: 10px;
+	width: 900px;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-style: solid;
+	border-color: #500805;
+}

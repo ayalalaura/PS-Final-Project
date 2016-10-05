@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GH-Hair</title>
+	<!--Responsive-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--External CSS-->
+	<link rel="stylesheet" type="text/css" href="final.css">
+	<!--Online fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Quicksand|Cookie" rel="stylesheet">
+</head>
+
+<body>
+<div class="container">
+	<!--Logo, with some styling in the tags. Text surrounded by image on either side. And tagline-->
+	<div class="title">
+		<header>
+			<a style="color:#BC6D4F;" href="home.html"><h1 id="brand"><img src="rose.jpg" width="125" height="90">The Goth Hippie<img src="rosereverse.png" width="125" height="90"></a></h1>
+			<h3 id="tagline">(noun): a nature loving creature with a morbid flair</h3></a>
+		</header>
+	</div>
+
+	<div class="navigation">
+		<nav>
+			<a class="tabs" href="home.html">Home</a>
+			<a class="tabs" href="about.html">About</a>
+			<div class="dropdown">
+				<a class="tabs" href="shop.html">Shop</a>
+				<div class="dropdown-items">
+					<a class="tabs" href="skin.html">Skin</a><br>
+					<a class="tabs" href="hair.html">Hair</a><br>
+					<a class="tabs" href="lips.html">Lips</a><br>
+					<a class="tabs" href="brows.html">Brows</a><br>
+				</div>
+			</div>
+			<a class="tabs" href="press.html">Press</a>
+			<a class="tabs" href="contact.html">Contact</a>
+			<a class="tabs" href="cart.html">Cart</a>
+		</nav>
+	</div>
+
+
+<!--Main content for Hair page, a slideshow for all the hair products. Large <div> containing slideshow <div> which holds two <div>s containing the left and right panels with product info. Most product images come from Instagram and product info comes from Flynn & King, Shea Moisture, AG, and 100 Percent Pure.-->
+	<div class="item-body">
+		<h2 style="margin-top:0px;">Hair</h2>
+		<div class="slideshow">
+		<!--slideshow divs serve as a container for two divs (products-left and -right that make up product content for each product displayed-->
+			<div class="products-left">
+			<center><img src="hair-1.png" width="300" height="300"></center>
+			<h4>How to Use</h4>
+			<p>Apply to clean wet hair and gently comb through from roots to ends. Leave in for 3 minutes. Rinse thoroughly.</p>
+		</div>
+		<div class="products-right">
+			<h3 style="margin:10px; margin-left:0px;">Mint Detox Duo</h3>
+			<h5>$20.00 USD (26 oz) <input class="price" type="button" name="add-cart" value="Add to cart" onclick="addCart()" style="width:100px; margin: 10px;"></h5>
+			<p>Hydrate, soothe, and naturally tone dry scalp while adding body and shine to dull hair with this lightweight duo. Certified organic Shea Butter combines with exhilarating African Water Mint, Activated Charcoal, Ginger and Opuntia Extracts in a moisturizing formula that supports healthy scalp conditions while restoring luster and manageability to hair.</p>
+			<h4>Ingredients</h4>
+			<p>African Water Mint: Boosts energy and enhances scalp circulation to promote healthy looking hair. Rejuvenates and refreshes for an invigorating experience.
+			Ginger: Loaded with antioxidant properties as well as circulation-stimulating, detoxifying, compounds. Helps keep skin purified.
+			Activated Charcoal: Absorbs oil and impurities to help detoxify and soothe.</p>
+		</div>
+		</div>
+		<div class="slideshow">
+			<div class="products-left">
+				<center><img src="hair-2.png" width="300" height="301"></center>
+				<h4>How to Use</h4>
+				<p>Apply Shampoo to wet hair. Lather, rinse, and repeat if needed. Follow with Nude Conditioner.</p>
+			</div>
+			<div class="products-right">
+				<h3 style="margin:10px; margin-left:0px;">Nude Conditioning Duo</h3>
+				<h5>$38.00 USD (8 oz) <input class="price" type="button" name="add-cart" value="Add to cart" onclick="addCart()" style="width:100px; margin: 10px;"></h5>
+				<p>This gentle, luxurious cleanser is enriched with minimalist and healthy ingredients to hydrate, add shine, and smooth for beautiful, shiny strands. Safe for color-treated hair and daily use, the formula restores vibrancy and softness while delivering a spa-like experience at home.
+				<h4>Ingredients</h4>
+				<p>Handcrafted using the finest organic ingredients from sustainable origins from around the world. Notes of: Pink Grapefruit, Neroli, Lemon Myrtle, Bergamot, Geranium, Jasmine, Bourbon Vanilla, Sandalwood, Cardamom, Balsam, Patchouli.</p>
+			</div>
+		</div>
+		<div class="slideshow">
+			<div class="products-left">
+				<center><img src="hair-3.png" width="302" height="299"></center>
+				<h4>How to Use</h4>
+				<p>Apply shampoo to wet hair and gently work into a rich lather. Rinse thoroughly. Repeat as needed. For the best results, follow with conditioner.</p>
+			</div>
+			<div class="products-right">
+				<h3 style="margin:10px; margin-left:0px;">Resilient Growth Shampoo</h3>
+				<h5>$12.00 USD (13 oz) <input class="price" type="button" name="add-cart" value="Add to cart" onclick="addCart()" style="width:100px; margin: 10px;"></h5>
+				<p>This gentle, sulfate-free cleanser gets to the root of the problem, creating an optimal environment for healthy hair growth. Unbreakable Bamboo, stimulating Maca Root and certified organic Shea Butter combine in this fortifying formula that targets weakened hair at the shaft so it resists breakage before it starts.</p>
+				<h4>Ingredients</h4>
+				<p>Formulated from Bamboo Extract, Maca Root, Red Clover and Flax Seed Oil.</p>
+			</div>
+		</div>
+		<div class="slideshow">
+			<div class="products-left">
+				<center><img src="hair-4.png" width="300" height="300"></center>
+				<h4>How to Use</h4>
+				<p>Apply as a non-rinse moisturizer and styling cream to damp, towel-dried hair as needed.</p>
+			</div>
+			<div class="products-right">
+				<h3 style="margin:10px; margin-left:0px;">Hibiscus Curl Styling Milk</h3>
+				<h5>$12.00 USD (8 oz) <input class="price" type="button" name="add-cart" value="Add to cart" onclick="addCart()" style="width:100px; margin: 10px;"></h5>
+				<p>This styling milk will transition dry, damaged, over-processed hair to frizz free, detangled naturally beautiful curls! This natural styling aid is designed to give your thick curls definition. Use as a leave-in moisturizer to achieve soft, shiny, natural, bouncy, frizz-free curls!</p>
+				<h4>Ingredients</h4>
+				<p>Coconut Oil - hydrates and protects hair while reducing breakage. Silk Protein - smooths hair for a soft, silky feel. Neem Oil - controls frizz while adding brilliant shine.</p>
+			</div>
+		</div>
+		<div class="slideshow">
+			<div class="products-left">
+				<center><img src="hair-5.png" width="300" height="300"></center>
+				<h4>How to Use</h4>
+				<p>Sprinkle throughout roots and work through with your fingers. Reapply as necessary. </p>
+			</div>
+			<div class="products-right">
+				<h3 style="margin:10px; margin-left:0px;">Mermaid Dry Shampoo</h3>
+				<h5>$24.00 USD (4 oz) <input class="price" type="button" name="add-cart" value="Add to cart" onclick="addCart()" style="width:100px; margin: 10px;"></h5>
+				<p>A miracle worker. Our talc-free dry shampoo is the perfect solution to lifeless, unwashed hair. A powerful combination of powders absorbs oil, adds volume and gives life to your hair, plus it smells amazing. Sprinkle a little in whenever your hair needs an instant pick me up.</p>
+				<h4>Ingredients</h4>
+				<p>Organic Arrowroot Powder mattifies greasy hair and adds volume; Aluminum-Free Baking Soda absorbs oil and adds freshness; Organic Essential Oils of Rose Geranium and Palmarosa create a beachy rose smell.</p>
+			</div>
+		</div>	
+		<a class="back-button" onclick="toggleDivs(-1)">&#10094;</a>
+		<a class="forward-button" onclick="toggleDivs(+1)">&#10095;</a>	
+	</div>
+
+</div>
+
+<!--Footer (below) contains table w/ 3 sections. Removed it from .container so footer would stay below slideshow. Removed footer tags so .footer-info would touch .container-->
+	<div class="footer-info">
+			<center><table class="impt-links">
+				<col width="270">
+  				<col width="270">
+  				<col width="270">
+				<tr>
+					<th>follow gh</th>
+					<th>quick links</th>
+					<th>newsletter sign-up</th>
+				</tr>
+				<tr>
+					<!--social media icons, links-->
+					<td>
+						<a target="_blank" href="https://www.facebook.com/kahlolove"><img class="icons" src="facebook-icon.png" width="28" height="28"></a>
+						<a target="_blank" href="https://www.instagram.com/The_GothHippie/"><img class="icons" src="instagram-icon.png" width="28" height="28"></a>
+						<a target="_blank" href="https://twitter.com/The_GothHippie"><img class="icons" src="twitter-icon.png" width="28" height="28"></a>
+					</td>
+					<td>
+						<a class="quick-links" href="shop.html">Shop All</a>
+					</td>
+					<td>
+						<!--newsletter sign-up input field-->
+						<input class="footer-input" type="text" name="email" style="width:260px;">
+					</td>
+				</tr>
+				<tr>
+					<td><a class="quick-links" target="_blank" href="https://twitter.com/search?q=%23thegothhippie&src=typd">#TheGothHippie</a></td>
+					<td>
+						<a class="quick-links" href="FAQ.html">Frequently Asked Questions</a>
+					</td>
+					<td>
+						<!--newsletter sign-up button, with JS-->
+						<input class="footer-button" type="button" onclick="newsletterSuccess()" name="submit" value="Join Us!" style="width:110px; float: right;">
+					</td>
+				<tr>
+					<td><a class="quick-links" target="_blank" href="https://twitter.com/hashtag/myhappyplace?src=hash">#MyHappyPlace</a></td>
+					<td>
+						<a class="quick-links" href="contact.html">Contact GH</a>
+					</td>
+					<td></td>
+				</tr>	
+			</table></center>
+	</div>
+
+<script type="text/javascript">
+//JS for product slideshow
+var slideIndex= 1;
+showDivs(slideIndex);
+
+function toggleDivs(n) {
+	showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+	var i;
+	var x= document.getElementsByClassName("slideshow");
+	if (n > x.length) {slideIndex = 1}
+	if (n < 1) {
+		slideIndex = x.length
+	}
+	for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";
+	}
+	x[slideIndex-1].style.display = "block";	
+}
+
+//onclick window alert for products
+function addCart() {
+	alert("Success! Item added to Cart");
+}
+
+//onclick window alert for newsletter sign-ups in footer
+function newsletterSuccess() {
+    alert("Thanks for subscribing to The Goth Hippie Newsletter! We look forward to haunting your inbox ;)");
+}
+</script>
+
+</body>
+
+<style>
+/*Internally styled container to account for amount of content on each page*/
+.container {
+	width: 1200px;
+	height: 1125px;
+}
+
+/*Slideshow disrupted footer alignment (floated to top). Removed from main div & styled internally.*/
+.footer-info {
+	width: 1140px;
+	text-align: center;
+	margin: auto;
+	padding: 30px;
+}
+</style>
+
+</html>

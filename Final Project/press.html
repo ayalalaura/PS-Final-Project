@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GH-Press</title>
+	<!--Responsive-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--External CSS-->
+	<link rel="stylesheet" type="text/css" href="final.css">
+	<!--Online fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Quicksand|Cookie" rel="stylesheet">
+</head>
+
+<body>
+<div class="container">
+	<!--Logo, with some styling in the tags. Text surrounded by image on either side. And tagline-->
+	<div class="title">
+		<header>
+			<a style="color:#BC6D4F;" href="landing.html"><h1 id="brand"><img src="rose.jpg" width="125" height="90">The Goth Hippie<img src="rosereverse.png" width="125" height="90"></a></h1>
+			<h3 id="tagline">(noun): a nature loving creature with a morbid flair</h3></a>
+		</header>
+	</div>
+
+	<div class="navigation">
+		<nav>
+			<a class="tabs" href="home.html">Home</a>
+			<a class="tabs" href="about.html">About</a>
+			<div class="dropdown">
+				<a class="tabs" href="shop.html">Shop</a>
+				<div class="dropdown-items">
+					<a class="tabs" href="skin.html">Skin</a><br>
+					<a class="tabs" href="hair.html">Hair</a><br>
+					<a class="tabs" href="lips.html">Lips</a><br>
+					<a class="tabs" href="brows.html">Brows</a><br>
+				</div>
+			</div>
+			<a class="tabs" href="press.html">Press</a>
+			<a class="tabs" href="contact.html">Contact</a>
+			<a class="tabs" href="cart.html">Cart</a>
+		</nav>
+	</div>
+
+	<!--Container & contents for Press body-->
+	<div class="press-body">
+		<h2 style="margin-top:0px;">People are talking about us...</h2>
+		<!--Image found on LexiWithTheCurls Instagram, review from LUSH-->
+		<p class="reviews" style="font-size: 19px;">
+			<img src="hair-review.png" width="200" height="199" align="left" style="padding:10px;"><br><br>"The <i><a class="links" href="hair.html">Invigorating Sea Salt Spray</a></i> is a DREAM for my textured, wavy hair. I was hesitant to try this because I assumed the saltwater would be too drying. However, after weeks of using this product my hair has actually softened considerably. A+"<br>- Lexi A., Blogger for <a class="links" target="_blank" href="http://lexiwiththecurls.com/"><i>Lexi With The Curls</i></a>
+		</p>
+		<br><br>
+		<!--Image found on Flynn&King Instagram, review from their site-->
+		<p class="reviews" style="font-size: 19px;">
+			<img src="skin-review.png" width="200" height="200" align="right" style="padding:10px;"><br>"I've tried so many natural serums on the market and the <i><a class="links" href="skin.html">Luna Restorative Oil Elixir</a></i> is by far my favorite! I've only used Luna for a week and people already have been asking if I've gotten facials recently because my skin looks radiant! My only complaint: I wish this came in a bigger bottle. I'm addicted!"<br>- Maggie V., Associate Editor at <a class="links" target="_blank" href="https://intothegloss.com/"><i>Into The Gloss</i></a>
+		</p>
+		<br>
+		<center><h4 style="text-decoration:none; font-family:'Amatic SC', cursive; font-size: 40px; margin:15px;">The hype doesn't stop here! give us love on <a class="links" target="_blank" href="https://twitter.com/The_GothHippie" style="color:#BC6D4F">social media</a>, or <a class="links" href="contact.html" style="color:#BC6D4F">leave us a message.</a></h4></center>
+	</div>
+</div>
+
+<!--Footer styled with table-->
+	<div class="footer-info">
+			<center><table class="impt-links">
+				<col width="270">
+  				<col width="270">
+  				<col width="270">
+				<tr>
+					<th>follow gh</th>
+					<th>quick links</th>
+					<th>newsletter sign-up</th>
+				</tr>
+				<tr>
+					<!--social media icons, links-->
+					<td>
+						<a target="_blank" href="https://www.facebook.com/kahlolove"><img class="icons" src="facebook-icon.png" width="28" height="28"></a>
+						<a target="_blank" href="https://www.instagram.com/The_GothHippie/"><img class="icons" src="instagram-icon.png" width="28" height="28"></a>
+						<a target="_blank" href="https://twitter.com/The_GothHippie"><img class="icons" src="twitter-icon.png" width="28" height="28"></a>
+					</td>
+					<td>
+						<a class="quick-links" href="shop.html">Shop All</a>
+					</td>
+					<td>
+						<!--newsletter sign-up input field-->
+						<input class="footer-input" type="text" name="email" style="width:260px;">
+					</td>
+				</tr>
+				<tr>
+					<td><a class="quick-links" target="_blank" href="https://twitter.com/search?q=%23thegothhippie&src=typd">#TheGothHippie</a></td>
+					<td>
+						<a class="quick-links" href="FAQ.html">Frequently Asked Questions</a>
+					</td>
+					<td>
+						<!--newsletter sign-up button, with JS-->
+						<input class="footer-button" type="button" onclick="newsletterSuccess()" name="submit" value="Join Us!" style="width:110px; float: right;">
+					</td>
+				<tr>
+					<td><a class="quick-links" target="_blank" href="https://twitter.com/hashtag/myhappyplace?src=hash">#MyHappyPlace</a></td>
+					<td>
+						<a class="quick-links" href="contact.html">Contact GH</a>
+					</td>
+					<td></td>
+				</tr>	
+			</table></center>
+	</div>
+
+<script>
+//onclick window alert for newsletter sign-ups in footer
+function newsletterSuccess() {
+    alert("Thanks for subscribing to The Goth Hippie Newsletter! We look forward to haunting your inbox ;)");
+}
+</script>
+
+</body>
+
+<style>
+/*Internally styled container to account for amount of content on each page*/
+.container {
+	width: 1200px;
+	height: 1300px;
+}
+
+.press-body {
+	width: 900px;
+}
+
+.footer-info {
+	width: 1140px;
+	text-align: center;
+	margin: auto;
+	padding: 30px;
+}
+</style>
+
+</html>

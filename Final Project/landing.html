@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Goth Hippie</title>
+	<!--Responsive-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--Online fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Quicksand" rel="stylesheet">
+	<!--Different style from the rest of the site - relied on internal CSS-->
+	<style>
+		body {
+			background-color: #1E0000;
+			/*Styling image to fill up the entire screen*/
+			background: url("flickering-candles.gif") no-repeat center fixed;
+			background-size: cover;
+		}
+
+		/*Aligning anchored text for landing page*/
+		.landing-page {
+			margin: 0 auto;
+			text-align: center;
+			margin-top: 25%;
+		}
+
+		/*Applying hover "glow" effect to anchored text*/
+		a {
+			text-decoration: none;
+			color: #1E0000;
+			font-family: 'Amatic SC', cursive;
+			font-size: 100px;
+			/*Outlining text to make it easier to read, using branded colors*/
+			text-shadow: 0 0 2px #9D331F;
+			letter-spacing: 8px;
+			margin: 0 auto;
+			transition: all .2s ease-in;
+		}
+
+		a:hover {
+			-webkit-stroke-width: 5.3px;
+			-webkit-stroke-color: #1E0000;
+			-webkit-fill-color: #1E0000;
+			text-shadow: 2px 2px 20px #500805;
+		}
+
+		/*Pushing down footer and aligning right (float:right wasn't effective)*/
+		footer {
+			color: #9D331F;
+			font-family: 'Amatic SC', cursive;
+			font-size: 60px;
+			letter-spacing: 8px;
+			position: absolute;
+			bottom: 0;
+			margin: 30px;
+			margin-left: 71%;
+
+		}
+	</style>
+</head>
+
+<body>
+	<div class="landing-page">
+		<a href="home.html">Welcome to Your Happy Place</a>
+	</div>
+
+	<footer>
+		#thegothhippie
+	</footer>	
+</body>
+</html>
