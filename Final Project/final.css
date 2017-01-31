@@ -1,24 +1,24 @@
 /* Colors used throughout:
-#500805 - wine; #1E0000 or rgb(30,0,0) - dark plum; 
+#500805 - wine; #1E0000 or rgb(30,0,0) - dark plum;
 #9D331F - coral; #BC6D4F - dusty rose */
 
-/*Outer container, setting color and default font for all 
+/*Outer container, setting color and default font for all
 content*/
 body {
-	background-color: #500805; 
+	background-color: #500805;
 	/*Styling image to fill up the entire screen, centered, no tiling*/
-	background: url("fall-grayscale.jpg") no-repeat center fixed;
+	background: url("./images/fall-grayscale.jpg") no-repeat center fixed;
 	background-size: cover;
 	/*Online font, linked in .html page heads*/
 	font-family: 'Quicksand', sans-serif;
 	/*Wanted to scale the entire website without manually changing all the sizing*/
 	-moz-transform: scale(0.8);
-    -webkit-transform: scale(0.8);
-    transform: scale(0.8);
-    margin: 0 auto;
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+  margin: 0 auto;
 }
 
-/*Main container for all other <div>s in the body, offset by 
+/*Main container for all other <div>s in the body, offset by
 dark plum color*/
 .container {
 	background-color: rgba(30,0,0,.85);
@@ -208,10 +208,10 @@ h3 {
 /*Edited h3, for Home*/
 .discount-code {
 	font-size: 35px;
-	text-decoration:none; 
-	word-spacing:8px; 
-	letter-spacing:8px; 
-	margin-top:0px; 
+	text-decoration:none;
+	word-spacing:8px;
+	letter-spacing:8px;
+	margin-top:0px;
 	margin-bottom:25px;
 }
 
@@ -251,8 +251,8 @@ input:hover {
 }
 
 input[type=text]:hover {
-    background-color: #500805;
-    color: #BC6D4F;
+  background-color: #500805;
+  color: #BC6D4F;
 }
 
 /*Effects for submission buttons*/
@@ -339,8 +339,8 @@ h2 {
 
 /*Edited h2, for Home*/
 .welcome {
-	text-decoration: none; 
-	word-spacing: 8px; 
+	text-decoration: none;
+	word-spacing: 8px;
 	letter-spacing: 8px;
 }
 
@@ -385,7 +385,7 @@ h4 {
 	margin-top: 20px;
 	padding: 50px;
 	text-align: left;
-}	
+}
 
 /*Price line for product pages*/
 h5 {
@@ -468,4 +468,9 @@ h5 {
 	margin-bottom: 20px;
 	border-style: solid;
 	border-color: #500805;
+}
+
+.contact-body {
+  margin: 0 auto;
+  margin-top: 6%;
 }

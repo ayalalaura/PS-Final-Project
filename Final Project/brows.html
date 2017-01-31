@@ -15,7 +15,7 @@
 	<!--Logo, with some styling in the tags. Text surrounded by image on either side. And tagline-->
 	<div class="title">
 		<header>
-			<a style="color:#BC6D4F;" href="landing.html"><h1 id="brand"><img src="rose.jpg" width="125" height="90">The Goth Hippie<img src="rosereverse.png" width="125" height="90"></a></h1>
+			<a style="color:#BC6D4F;" href="landing.html"><h1 id="brand"><img src="./images/rose.jpg" width="125" height="90">The Goth Hippie<img src="./images/rosereverse.png" width="125" height="90"></a></h1>
 			<h3 id="tagline">(noun): a nature loving creature with a morbid flair</h3></a>
 		</header>
 	</div>
@@ -45,7 +45,7 @@
 		<!--slideshow divs serve as a container for two divs (products-left and -right that make up product content for each product displayed-->
 		<div class="slideshow">
 			<div class="products-left">
-			<center><img src="brows-1.png" width="299" height="301"></center>
+			<center><img src="./images/brows-1.png" width="299" height="301"></center>
 			<h4>How to Use</h4>
 			<p>Apply in short, upward strokes to fluff and shape brows into place. Beyond fleek brows await you.</p>
 		</div>
@@ -59,7 +59,7 @@
 		</div>
 		<div class="slideshow">
 			<div class="products-left">
-				<center><img src="brows-2.png" width="300" height="296"></center>
+				<center><img src="./images/brows-2.png" width="300" height="296"></center>
 				<h4>How to Use</h4>
 				<p>Use Dual Ended Eyebrow brush to apply color to the brow perfectly with its precisely angled-tip, and brushes hair into place with its spoolie.</p>
 			</div>
@@ -73,7 +73,7 @@
 		</div>
 		<div class="slideshow">
 			<div class="products-left">
-				<center><img src="brows-3.png" width="300" height="300"></center>
+				<center><img src="./images/brows-3.png" width="300" height="300"></center>
 				<h4>How to Use</h4>
 				<p>Use with an angled brush to darken or fill any gaps in eyebrows. Use in short, quick strokes going with the directions of the hair.</p>
 			</div>
@@ -87,7 +87,7 @@
 		</div>
 		<div class="slideshow">
 			<div class="products-left">
-				<center><img src="brows-4.png" width="300" height="299"></center>
+				<center><img src="./images/brows-4.png" width="300" height="299"></center>
 				<h4>How to Use</h4>
 				<p>Dip your angled brush into the pomade and make sure it is evenly distributed on the brush. Following the direction of your brow's hair growth, feather in with the pomade. Apply more for a darker, more defined look.</p>
 			</div>
@@ -101,7 +101,7 @@
 		</div>
 		<div class="slideshow">
 			<div class="products-left">
-				<center><img src="brows-5.png" width="299" height="300"></center>
+				<center><img src="./images/brows-5.png" width="299" height="300"></center>
 				<h4>How to Use</h4>
 				<p>Use with wand to darken or fill any gaps in eyebrows. Use in short, quick strokes going with the directions of the hair.</p>
 			</div>
@@ -112,9 +112,9 @@
 				<h4>Ingredients</h4>
 				<p>Formulated with Castor Seed Oil, Coconut Oil, Marula Oil, Candelilla Wax, Silica, Vitamin E, Biotin, Pro-Vitamin B5, Pigments of: Cacao, Apricot, Peach, Coffee, Tomato and Black Tea.</p>
 			</div>
-		</div>	
+		</div>
 		<a class="back-button" onclick="toggleDivs(-1)">&#10094;</a>
-		<a class="forward-button" onclick="toggleDivs(+1)">&#10095;</a>	
+		<a class="forward-button" onclick="toggleDivs(+1)">&#10095;</a>
 	</div>
 </div>
 
@@ -132,9 +132,9 @@
 				<tr>
 					<!--social media icons, links-->
 					<td>
-						<a target="_blank" href="https://www.facebook.com/kahlolove"><img class="icons" src="facebook-icon.png" width="28" height="28"></a>
-						<a target="_blank" href="https://www.instagram.com/The_GothHippie/"><img class="icons" src="instagram-icon.png" width="28" height="28"></a>
-						<a target="_blank" href="https://twitter.com/The_GothHippie"><img class="icons" src="twitter-icon.png" width="28" height="28"></a>
+						<a target="_blank" href="https://www.facebook.com/kahlolove"><img class="icons" src="./images/facebook-icon.png" width="28" height="28"></a>
+						<a target="_blank" href="https://www.instagram.com/The_GothHippie/"><img class="icons" src="./images/instagram-icon.png" width="28" height="28"></a>
+						<a target="_blank" href="https://twitter.com/The_GothHippie"><img class="icons" src="./images/twitter-icon.png" width="28" height="28"></a>
 					</td>
 					<td>
 						<a class="quick-links" href="shop.html">Shop All</a>
@@ -159,7 +159,7 @@
 						<a class="quick-links" href="contact.html">Contact GH</a>
 					</td>
 					<td></td>
-				</tr>	
+				</tr>
 			</table></center>
 	</div>
 
@@ -182,7 +182,7 @@ function showDivs(n) {
 	for (i = 0; i < x.length; i++) {
 		x[i].style.display = "none";
 	}
-	x[slideIndex-1].style.display = "block";	
+	x[slideIndex-1].style.display = "block";
 }
 
 //onclick window alert for products

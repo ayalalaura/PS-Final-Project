@@ -15,7 +15,7 @@
 	<!--Logo, with some styling in the tags. Text surrounded by image on either side. And tagline-->
 	<div class="title">
 		<header>
-			<a style="color:#BC6D4F;" href="landing.html"><h1 id="brand"><img src="rose.jpg" width="125" height="90">The Goth Hippie<img src="rosereverse.png" width="125" height="90"></a></h1>
+			<a style="color:#BC6D4F;" href="landing.html"><h1 id="brand"><img src="./images/rose.jpg" width="125" height="90">The Goth Hippie<img src="./images/rosereverse.png" width="125" height="90"></a></h1>
 			<h3 id="tagline">(noun): a nature loving creature with a morbid flair</h3></a>
 		</header>
 	</div>
@@ -35,7 +35,7 @@
 			</div>
 			<a class="tabs" href="press.html">Press</a>
 			<a class="tabs" href="contact.html">Contact</a>
-			<a class="tabs" href="cart.html">Cart</a> 
+			<a class="tabs" href="cart.html">Cart</a>
 		</nav>
 	</div>
 
@@ -45,7 +45,7 @@
 		<!--slideshow divs serve as a container for two divs (products-left and -right that make up product content for each product displayed-->
 		<div class="slideshow">
 			<div class="products-left">
-				<center><img src="skin-1.png" width="298" height="298"></center>
+				<center><img src="./images/skin-1.png" width="298" height="298"></center>
 				<h4>How to Use</h4>
 				<p>Great for all skin types. For use in the morning and at night. Use alone, or layer under your daily moisturizer for added hydration. Warm 1/2 to 1 pump of oil in hands, then gently pat and massage onto face and d&#233;collet&#233;.</p>
 			</div>
@@ -59,7 +59,7 @@
 		</div>
 		<div class="slideshow">
 			<div class="products-left">
-				<center><img src="skin-2.png" width="297" height="298"></center>
+				<center><img src="./images/skin-2.png" width="297" height="298"></center>
 				<h4>How to Use</h4>
 				<p>First off, run it under water to fully saturate the sponge. You can choose to use it with or without cleanser.<br><br>
 				If chosen to use on its own; this is great for morning washes when you are bare faced with only remnants of your night care.</p>
@@ -74,7 +74,7 @@
 		</div>
 		<div class="slideshow">
 			<div class="products-left">
-				<center><img src="skin-3.png" width="297" height="298"></center>
+				<center><img src="./images/skin-3.png" width="297" height="298"></center>
 				<h4>How to Use</h4>
 				<p>Roll onto your pretty pits for a fresh, clean scent that lasts all day. No reapplying necessary!</p>
 			</div>
@@ -89,7 +89,7 @@
 		</div>
 		<div class="slideshow">
 			<div class="products-left">
-				<center><img src="skin-4.png" width="299" height="298"></center>
+				<center><img src="./images/skin-4.png" width="299" height="298"></center>
 				<h4>How to Use</h4>
 				<p>Apply after cleansing face. Use a small amount and really working into skin using fingertips. Apply prior to sun exposure.</p>
 			</div>
@@ -103,7 +103,7 @@
 		</div>
 		<div class="slideshow">
 			<div class="products-left">
-				<center><img src="skin-5.png" width="297" height="298"></center>
+				<center><img src="./images/skin-5.png" width="297" height="298"></center>
 				<h4>How to Use</h4>
 				<p>Mix contents well. Apply a small amount to palm, massaging gently into skin using a circular motion, concentrating on rough and dry areas. As a hand treatment, rub palms together to create gentle warmth and massage gently into top of hands and cuticles. Rinse skin thoroughly with warm water and pat dry.</p>
 			</div>
@@ -117,7 +117,7 @@
 		</div>
 
 		<a class="back-button" onclick="toggleDivs(-1)">&#10094;</a>
-		<a class="forward-button" onclick="toggleDivs(+1)">&#10095;</a>	
+		<a class="forward-button" onclick="toggleDivs(+1)">&#10095;</a>
 	</div>
 </div>
 
@@ -135,9 +135,9 @@
 				<tr>
 					<!--social media icons, links-->
 					<td>
-						<a target="_blank" href="https://www.facebook.com/kahlolove"><img class="icons" src="facebook-icon.png" width="28" height="28"></a>
-						<a target="_blank" href="https://www.instagram.com/The_GothHippie/"><img class="icons" src="instagram-icon.png" width="28" height="28"></a>
-						<a target="_blank" href="https://twitter.com/The_GothHippie"><img class="icons" src="twitter-icon.png" width="28" height="28"></a>
+						<a target="_blank" href="https://www.facebook.com/kahlolove"><img class="icons" src="./images/facebook-icon.png" width="28" height="28"></a>
+						<a target="_blank" href="https://www.instagram.com/The_GothHippie/"><img class="icons" src="./images/instagram-icon.png" width="28" height="28"></a>
+						<a target="_blank" href="https://twitter.com/The_GothHippie"><img class="icons" src="./images/twitter-icon.png" width="28" height="28"></a>
 					</td>
 					<td>
 						<a class="quick-links" href="shop.html">Shop All</a>
@@ -162,7 +162,7 @@
 						<a class="quick-links" href="contact.html">Contact GH</a>
 					</td>
 					<td></td>
-				</tr>	
+				</tr>
 			</table></center>
 	</div>
 
@@ -185,7 +185,7 @@ function showDivs(n) {
 	for (i = 0; i < x.length; i++) {
 		x[i].style.display = "none";
 	}
-	x[slideIndex-1].style.display = "block";	
+	x[slideIndex-1].style.display = "block";
 }
 
 //onclick window alert for products
